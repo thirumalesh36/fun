@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FUN GAME</title>
+     <style>
+          h1{
+               text-align: center;
+               margin: auto;
+               margin-top: 25%;
+               font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          }
+     </style>
+</head>
+<body>
+<h1 id="head">...</h1>
+<script>
+     let choice = prompt("Are you a fool?","enter yes or no");
+     let result = document.getElementById("head");
+    if(choice!=null || choice!=''||choice!=' '){
+     choice=choice.toLowerCase()
+    }
+     while(choice=='no' || choice==null || choice=='enter yes or no'){
+          choice = prompt("Are you a fool?","enter yes or no");
+     }
+     result.innerHTML="I know you are a fool"
+</script>
+ 
+</body>
+</html>
